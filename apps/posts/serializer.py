@@ -5,6 +5,7 @@ class userminierializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['id', 'username']
+        ref_name = 'UserMiniUsers'
 
 class tagserializer(serializers.ModelSerializer):
     class Meta:

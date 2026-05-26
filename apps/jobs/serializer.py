@@ -7,6 +7,7 @@ class userminierializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['id', 'username']
+    ref_name = 'UserMiniUsers'
 
 class Jobsserializer(serializers.ModelSerializer):
     skill_required = skillserializer(many=True,read_only =True)
